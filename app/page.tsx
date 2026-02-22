@@ -281,12 +281,21 @@ export default function Home() {
         )}
 
         {/* Footer */}
-        <p
-          className="text-center text-espresso/40 text-xs mt-6"
-          style={{ fontFamily: "var(--font-body)" }}
-        >
-          Basecamp Coffee — find your ritual
-        </p>
+        <div className="text-center mt-6 flex items-center justify-center gap-4">
+          <p
+            className="text-espresso/40 text-xs"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Basecamp Coffee — find your ritual
+          </p>
+          <a
+            href="/barista"
+            className="text-espresso/30 text-xs hover:text-caramel transition-colors"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Barista reference
+          </a>
+        </div>
       </div>
     </main>
   );
