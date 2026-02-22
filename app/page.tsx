@@ -7,7 +7,7 @@ type PersonalityKey = "zen" | "bold" | "sweet" | "indulgent";
 
 const personalities: Record<
   PersonalityKey,
-  { name: string; coffee: string; tagline: string; svg: string; description: string }
+  { name: string; coffee: string; tagline: string; svg: string; description: string; alsoTry: string[] }
 > = {
   zen: {
     name: "Zen Minimalist",
@@ -16,6 +16,7 @@ const personalities: Record<
     svg: "/black-coffee.svg",
     description:
       "You appreciate coffee in its purest form. No distractions, no extras — just the honest flavor of a beautifully roasted bean.",
+    alsoTry: ["Pour Over, Ethiopian Yirgacheffe", "Cold Brew, Black", "Americano"],
   },
   bold: {
     name: "Bold Adventurer",
@@ -24,6 +25,7 @@ const personalities: Record<
     svg: "/espresso.svg",
     description:
       "You hit the ground running and don't look back. Concentrated, powerful, and always moving — your coffee matches your energy.",
+    alsoTry: ["Ristretto", "Cold Brew, Black", "Cortado"],
   },
   sweet: {
     name: "Sweet Enthusiast",
@@ -32,6 +34,7 @@ const personalities: Record<
     svg: "/latte.svg",
     description:
       "You bring warmth to every room. A touch of sweetness, a creamy finish — coffee for you is comfort and joy in a cup.",
+    alsoTry: ["Vanilla Oat Latte", "Honey Lavender Latte", "Brown Sugar Shaken Espresso"],
   },
   indulgent: {
     name: "Indulgent Treat",
@@ -40,6 +43,7 @@ const personalities: Record<
     svg: "/mocha.svg",
     description:
       "Why choose between coffee and dessert? You believe every cup should be a little celebration. Go on — you've earned the whip.",
+    alsoTry: ["White Mocha", "Salted Caramel Cold Brew", "Pumpkin Spice Latte"],
   },
 };
 
@@ -252,7 +256,7 @@ export default function Home() {
             </p>
 
             {/* Coffee recommendation */}
-            <div className="bg-cream rounded-2xl px-6 py-4 mb-8 inline-block">
+            <div className="bg-cream rounded-2xl px-6 py-4 mb-4 inline-block">
               <p
                 className="text-xs uppercase tracking-widest text-espresso/50 mb-1"
                 style={{ fontFamily: "var(--font-body)" }}
@@ -265,6 +269,28 @@ export default function Home() {
               >
                 {personalities[result].coffee}
               </p>
+            </div>
+
+            {/* Also try */}
+            <div className="mb-8 text-left">
+              <p
+                className="text-xs uppercase tracking-widest text-espresso/40 mb-3 text-center"
+                style={{ fontFamily: "var(--font-body)" }}
+              >
+                Also try
+              </p>
+              <ul className="flex flex-col gap-2">
+                {personalities[result].alsoTry.map((drink) => (
+                  <li
+                    key={drink}
+                    className="flex items-center gap-2 bg-white border border-tan rounded-xl px-4 py-3 text-espresso text-sm"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
+                    <span className="text-caramel">☕</span>
+                    {drink}
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {/* Retake */}
