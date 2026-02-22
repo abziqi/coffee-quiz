@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 3: Bold & Dramatic</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0A;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #111;
+    border-radius: 16px;
+    padding: 52px;
+    max-width: 560px;
+    width: 100%;
+    border: 1px solid #222;
+  }
+  .badge {
+    font-size: 11px;
+    color: #C8A97E;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .progress {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 44px;
+  }
+  .dot { width: 32px; height: 2px; background: #333; border-radius: 2px; }
+  .dot.active { background: #C8A97E; }
+  .dot.done { background: #666; }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #F5F0E8;
+    margin-bottom: 36px;
+    line-height: 1.35;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .option {
+    padding: 18px 22px;
+    border-radius: 8px;
+    border: 1px solid #2A2A2A;
+    font-size: 15px;
+    color: #AAA;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .option:hover { border-color: #C8A97E; color: #F5F0E8; background: #1A1A1A; }
+  .option.selected { border-color: #C8A97E; color: #F5F0E8; background: #1A1510; }
+  .num {
+    font-size: 11px;
+    color: #555;
+    width: 20px;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+  }
+  .option.selected .num { color: #C8A97E; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="badge">☕ Coffee Personality Quiz</div>
+  <div class="progress">
+    <div class="dot done"></div>
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <h1>It's Sunday morning. What are you doing?</h1>
+  <div class="options">
+    <div class="option"><span class="num">01</span> Up early, already on my second cup</div>
+    <div class="option selected"><span class="num">02</span> Still in pajamas, slow and cozy</div>
+    <div class="option"><span class="num">03</span> Reading with something warm in hand</div>
+    <div class="option"><span class="num">04</span> Brunch plans with friends, obviously</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Glass body -->
+  <path d="M72 60 L65 158 Q65 165 100 165 Q135 165 135 158 L128 60 Z" fill="#fff" stroke="#C8813A" stroke-width="2.5"/>
+  <!-- Coffee layer at bottom -->
+  <path d="M67 138 L133 138 Q135 158 100 165 Q65 165 65 158 Z" fill="#C8813A" opacity="0.3"/>
+  <!-- Milk layer -->
+  <path d="M69 100 L131 100 L128 60 L72 60 Z" fill="#EDD5B3" opacity="0.5"/>
+  <!-- Caramel drizzle -->
+  <path d="M80 75 Q90 68 100 75 Q110 82 120 75" stroke="#C8813A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M85 85 Q95 78 105 85 Q115 92 125 85" stroke="#C8813A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Glass rim -->
+  <ellipse cx="100" cy="60" rx="28" ry="6" fill="#EDD5B3" stroke="#C8813A" stroke-width="2"/>
+  <!-- Steam -->
+  <path d="M93 50 Q90 42 93 36" stroke="#C8813A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M100 48 Q97 40 100 34" stroke="#C8813A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M107 50 Q104 42 107 36" stroke="#C8813A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

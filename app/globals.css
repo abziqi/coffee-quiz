@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFFBF6;
+  --color-caramel: #C8813A;
+  --color-tan: #EDD5B3;
+  --color-espresso: #3D2B1F;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: #FFFBF6;
+  color: #3D2B1F;
+  font-family: var(--font-body), sans-serif;
+}

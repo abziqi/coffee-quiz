@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 4: Warm & Cozy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito:wght@400;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(160deg, #F5E6D3 0%, #EDD5B3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #FFFBF6;
+    border-radius: 24px;
+    padding: 48px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 8px 40px rgba(180, 120, 60, 0.12);
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .coffee-icon { font-size: 28px; }
+  .brand { font-family: 'Lora', serif; font-size: 15px; color: #8B5E3C; font-weight: 600; }
+  .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #F0E0CC;
+    border-radius: 6px;
+    margin-bottom: 36px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    width: 33%;
+    height: 100%;
+    background: linear-gradient(90deg, #C8813A, #E8A55A);
+    border-radius: 6px;
+  }
+  .step { font-size: 13px; color: #B8906A; margin-bottom: 10px; font-weight: 600; }
+  h1 {
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #3D2B1F;
+    margin-bottom: 32px;
+    line-height: 1.4;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .option {
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 2px solid #EDD5B3;
+    font-size: 15px;
+    color: #5C3D2E;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+  }
+  .option:hover { border-color: #C8813A; background: #FFF8F2; }
+  .option.selected { border-color: #C8813A; background: #FFF3E6; }
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #DDD;
+    flex-shrink: 0;
+  }
+  .option.selected .dot {
+    border-color: #C8813A;
+    background: #C8813A;
+    box-shadow: 0 0 0 3px #FFDDB8;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top">
+    <span class="coffee-icon">☕</span>
+    <span class="brand">Basecamp Coffee</span>
+  </div>
+  <div class="step">Question 2 of 6</div>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <h1>It's Sunday morning. What are you doing?</h1>
+  <div class="options">
+    <div class="option"><div class="dot"></div> Up early, already on my second cup</div>
+    <div class="option selected"><div class="dot"></div> Still in pajamas, slow and cozy</div>
+    <div class="option"><div class="dot"></div> Reading with something warm in hand</div>
+    <div class="option"><div class="dot"></div> Brunch plans with friends, obviously</div>
+  </div>
+</div>
+</body>
+</html>

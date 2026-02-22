@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Saucer -->
+  <ellipse cx="100" cy="165" rx="58" ry="10" fill="#EDD5B3" stroke="#C8813A" stroke-width="2"/>
+  <!-- Mug body -->
+  <rect x="66" y="112" width="68" height="54" rx="6" fill="#fff" stroke="#C8813A" stroke-width="2.5"/>
+  <!-- Chocolate coffee inside -->
+  <ellipse cx="100" cy="112" rx="34" ry="8" fill="#3D2B1F" stroke="#C8813A" stroke-width="2"/>
+  <!-- Handle -->
+  <path d="M134 122 Q152 122 152 139 Q152 156 134 156" stroke="#C8813A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Whipped cream cloud -->
+  <ellipse cx="100" cy="108" rx="30" ry="12" fill="#fff" stroke="#EDD5B3" stroke-width="1.5"/>
+  <ellipse cx="85" cy="104" rx="14" ry="10" fill="#fff" stroke="#EDD5B3" stroke-width="1.5"/>
+  <ellipse cx="115" cy="104" rx="14" ry="10" fill="#fff" stroke="#EDD5B3" stroke-width="1.5"/>
+  <ellipse cx="100" cy="100" rx="18" ry="12" fill="#fff" stroke="#EDD5B3" stroke-width="1.5"/>
+  <!-- Chocolate drizzle on cream -->
+  <path d="M88 100 Q95 107 105 100 Q112 95 118 103" stroke="#3D2B1F" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- Cherry on top -->
+  <circle cx="100" cy="90" r="6" fill="#C8813A"/>
+  <path d="M100 84 Q105 76 112 78" stroke="#3D2B1F" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

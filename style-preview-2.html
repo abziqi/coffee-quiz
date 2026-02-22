@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 2: Minimal & Clean</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #FAFAFA;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 52px;
+    max-width: 560px;
+    width: 100%;
+    border: 1px solid #E8E8E8;
+  }
+  .meta {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 2px;
+    background: #F0F0F0;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+  .progress-fill {
+    width: 33%;
+    height: 100%;
+    background: #222;
+    border-radius: 2px;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 36px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .option {
+    padding: 18px 20px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .option:hover { border-color: #222; }
+  .option.selected { border-color: #222; background: #F8F8F8; }
+  .radio {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1.5px solid #DDD;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .option.selected .radio {
+    border-color: #222;
+    background: #222;
+  }
+  .option.selected .radio::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="meta">Question 2 of 6</div>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <h1>It's Sunday morning. What are you doing?</h1>
+  <div class="options">
+    <div class="option"><div class="radio"></div> Up early, already on my second cup</div>
+    <div class="option selected"><div class="radio"></div> Still in pajamas, slow and cozy</div>
+    <div class="option"><div class="radio"></div> Reading with something warm in hand</div>
+    <div class="option"><div class="radio"></div> Brunch plans with friends, obviously</div>
+  </div>
+</div>
+</body>
+</html>
